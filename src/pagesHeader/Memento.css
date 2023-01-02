@@ -1,0 +1,98 @@
+.create {
+    height: 30rem;
+    color: var(--main-color);
+}
+
+.create-title {
+    display: grid;
+    justify-content: center;
+    margin: 1.8rem 0;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+
+form select:focus,
+input:focus {
+    outline: none;
+}
+
+.create form select,
+input {
+    border: none;
+    height: 2.5rem;
+    border-radius: 10px;
+    color: var(--main-color);
+    padding-inline-start: 0.7rem;
+}
+
+.create form button {
+    display: grid;
+    border: none;
+    background-color: white;
+    height: 2.5rem;
+    border-radius: 10px;
+    width: 12.5rem;
+    margin-left: 40px;
+    margin-top: 1rem;
+    align-items: center;
+    text-decoration-line: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--main-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media screen and (max-width: 480px) {
+   .memento-nav{
+    font-size: 20px;
+    margin: 0 1rem;
+   } 
+
+   .memento-nav button{
+    width: 5rem;
+    margin: 0;
+   }
+
+   .btn-create{
+    width: 10rem;
+    height: 2rem;
+    font-size: smaller;
+   }
+
+   .table-list {
+    min-width: 200px;
+    width: 50%;
+    margin: 0;
+   
+   }
+   th {
+    font-size: 15px;
+   }
+
+   td{
+    font-size: 14.5px;
+   }
+
+   th, td {
+    padding: 2px;
+   }
+
+   form {
+  font-size: 10px;
+   }
+
+   .btn-edit-delete{
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+   }
+
+  .btn-edit-delete button {
+   width: 3.5rem;
+   }
+ }

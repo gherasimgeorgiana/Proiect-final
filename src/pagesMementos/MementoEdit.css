@@ -1,0 +1,35 @@
+.edit-table {
+height: 30rem;
+color: var(--main-color);
+}
+
+.edit-title {
+display: grid;
+justify-content: center;
+margin: 25px 0;
+}
+
+.edit-table form select, input{
+border: none;
+height: 40px;
+border-radius: 10px;
+color: var(--main-color);
+padding-inline-start: 10px;
+}
+
+.edit-table form button {
+    display: grid;
+    border: none;
+    background-color: white;
+    height: 40px;
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 15px;
+    align-items: center;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--main-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

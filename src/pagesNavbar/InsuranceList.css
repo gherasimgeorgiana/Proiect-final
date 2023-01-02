@@ -1,0 +1,10 @@
+.insurance-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 3.12rem;
+    height: 80rem;
+    margin-inline-start: 12.5rem;
+    margin-inline-end: 12.5rem;
+    padding: 0;
+}

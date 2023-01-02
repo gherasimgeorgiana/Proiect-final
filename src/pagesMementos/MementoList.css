@@ -1,0 +1,91 @@
+:root {
+    --main-color: rgba(54, 68, 121, 1);
+    --orange: rgba(246, 142, 37, 1);
+}
+
+.memento-nav {
+    font-size: 1.85rem;
+    color: var(--main-color);
+    margin: 1.85rem;
+}
+
+.memento-nav button {
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+    color: var(--main-color);
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    width: 10rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn-create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    width: 20rem;
+    cursor: pointer;
+    height: 3.12rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.table-list {
+    min-width: 500px;
+    width: 75%;
+    margin: 1.25rem auto;
+    color: var(--main-color);
+    font-size: larger;
+    border: 2px solid var(--main-color);
+}
+
+thead tr {
+    background-color: rgb(248, 201, 113);
+    text-align: center;
+    font-size: larger;
+}
+
+th,
+td {
+    padding: 0.60rem 0.95rem;
+}
+
+tbody tr,
+td,
+th {
+    border: 1px solid var(--main-color);
+}
+
+.btn-edit-delete button {
+    border: none;
+    display: flex;
+    float: left;
+    width: 5.5rem;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0;
+}
+
+.btn-delete-list {
+    margin-left: 0.625rem;
+}
+
+.btn-edit-list {
+    margin-left: 0.625rem;
+}
+
+.btn-edit-delete {
+    justify-content: space-around;
+    display: flex;
+    height: 3.15rem;
+    padding: 0.6rem 0;
+}
