@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function Rca() {
     return (
-        <section>
+        <section className="rca-container">
             <div>
                 <button className="btn-rca" type='button' onClick={(e) => {
                     e.preventDefault();

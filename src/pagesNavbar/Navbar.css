@@ -53,13 +53,15 @@
 }
 
  @media screen and (max-width: 480px){
+ 
 
  .nav-item .item{
   display: none;
  }
 
  .nav{
-height: 10px;
+height: 0px;
+width: 400px;
  } 
  
  .nav ul {
@@ -77,7 +79,7 @@ height: 10px;
     background-color: var(--main-color);
     left: 0;
     top:10%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
     width: 100%;
     gap:0;
    
@@ -108,3 +110,12 @@ height: 10px;
   }
 
 }  
+
+@media (min-width: 480px) and (max-width: 780px){
+   body{
+    width: 100%;
+  }
+  .nav{
+    width: 100%;
+  }
+}

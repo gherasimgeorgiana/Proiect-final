@@ -115,17 +115,7 @@ border-radius: 10px;
 width: 20rem;
 cursor: pointer;
 height: 3.12rem;
-}
-
-.btn-create {
-color: var(--main-color);
-font-size: larger;
-font-weight: 700;
-border: none;
-background-color: white;
-border-radius: 10px;
-width: 20rem;
-cursor: pointer;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .register-here {
@@ -137,6 +127,7 @@ display: grid;
 flex-direction: column;
 padding: 1rem 20rem;
 background-image: linear-gradient(79deg, #fcfced, #fcedfc, 48%, #ebf6ff);
+text-align: justify;
 }
 
 .contact {
@@ -159,22 +150,27 @@ text-decoration: underline;
 }
 
 
+.rca-container{
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.casco-container{
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
 .rca-info {
   display: grid;
-width: 90%;
+  width: 80%;
 margin-left: 12.5rem;
 font-size: larger;
 }
 
-/* .rca-info h1{
-  width: 90%;
-  margin-left: 12.5rem;
-  font-size: larger;
-} */
 
 .casco-info {
   display: grid;
-  width: 90%;
+  width: 80%;
   margin-left: 12.5rem;
   font-size: larger;
 }
@@ -207,22 +203,37 @@ font-size: larger;
   border-radius: 10px;
 }
 
+.house-container{
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
 .house-info {
   display: grid;
-  width: 75%;
+  width: 80%;
   margin-left: 12.5rem;
   font-size: larger;
 }
 
 .travel-info {
   display: grid;
-  width: 75%;
+  width: 80%;
   margin-left: 12.5rem;
   font-size: larger;
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .all-details {
 display: grid;
+}
+
+.home-container{
+  margin-bottom: 3rem;
+}
+
+.insurance-complete{
+  margin-bottom: 3rem;
 }
 
 
@@ -266,9 +277,10 @@ display: grid;
    }
 
    ul.insurance-list{
-    margin: 25px;
+    margin: 15px;
+    width: 450px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap:8rem;
+    gap:5rem;
     
    }
 
@@ -276,38 +288,41 @@ display: grid;
     height: 120px;
     margin-left: 40px;
    }
+
   }
 
-/*@media screen and (max-width: 780px) {
+@media (min-width: 480px) and (max-width: 780px) {
   .info-dauna {
     padding: 1rem;
      } 
   
      .rca-info {
-      margin-left: 1.5rem;
+      margin-left: 2rem;
      width: 90%;
      }
   
      .btn-rca {
       margin-left: 25%;
+      margin-top: 10px;
      }
   
      .casco-info {
-      margin-left: 1.5rem;
-      width: 60%;
+      margin-left: 2rem;
+      width: 90%;
      }
   
      .house-info {
-      margin-left: 1.5rem;
+      margin-left: 2rem;
       width: 90%;
      }
   
      .btn-house{
       margin-left: 25%;
+      margin-top: 10px;
      }
   
      .travel-info{
-      margin-left: 1.5rem;
+      margin-left: 2rem;
       width: 90%;
      }
   
@@ -318,9 +333,9 @@ display: grid;
      }
   
      ul.insurance-list{
-      margin: 25px;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap:8rem;
+      margin: 0 25px 20px 25px;
+      grid-template-columns: repeat(3, 1fr);
+      gap:2rem;
       
      }
   
@@ -329,4 +344,3 @@ display: grid;
       margin-left: 40px;
      }
     }
-*/

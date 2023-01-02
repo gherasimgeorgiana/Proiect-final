@@ -15,7 +15,7 @@ export function InsuranceList() {
 
 
   return (
-    <section>
+    <section className='insurance-complete'>
 
       <ul className='insurance-list'>
         {insurance.map((insurance) => {

@@ -1,12 +1,9 @@
-
-import { useState } from "react";
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import Logo from '../images/logo.svg';
-import {FaBars, FaTimes} from 'react-icons/fa';
 import './Header.css';
 
 export default function Header() {
-    const [isMobile, setIsMobile] = useState(false);
+ 
     return( 
         <header className='header-page'>
             <Link to="/" >
@@ -26,17 +23,7 @@ export default function Header() {
                 <CustomLink to="/contact">Contact</CustomLink>
                 <CustomLink to="/login">Login</CustomLink> 
             </ul>
-            <button 
-            className='mobile-menu'
-            onClick={() => setIsMobile(!isMobile)}
-            >
-                {isMobile ? (
-                    <FaTimes />
-                ) : (
-                    <FaBars />
-                )}
-                 
-            </button>
+          
         </header>
     )
 }

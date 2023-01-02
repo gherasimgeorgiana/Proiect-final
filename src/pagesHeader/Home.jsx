@@ -4,7 +4,7 @@ import './Home.css';
 
 export default function Home() {
     return (
-    <section >
+    <section className="home-container">
         <img className="img-home" src={home} alt='Peisaj cu masina'/>
         
         <div className="home">

@@ -1,6 +1,6 @@
 export default function Casco() {
     return (
-        <section><br />
+        <section className="casco-container"><br />
             <div className="casco-info">
                 <h1>Ce este asigurarea CASCO?</h1>
                 <p>Polița CASCO este o asigurare facultativă, spre deosebire de polița RCA, dar nu mai puțin importantă. Dimpotrivă. Iar asta, întrucât o asigurare CASCO îți protejează propriile finanțe prin acoperirea prejudiciilor produse propriului vehicul în urma unui accident, indiferent dacă ești responsabil sau nu de producerea acestora.<br /><br />

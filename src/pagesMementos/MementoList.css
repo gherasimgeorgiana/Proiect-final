@@ -6,7 +6,7 @@
 .memento-nav {
     font-size: 1.85rem;
     color: var(--main-color);
-    margin: 1.85rem;
+    margin: 1.85rem 1.85rem 0 1.85rem;
 }
 
 .memento-nav button {
@@ -28,7 +28,25 @@
     align-items: center;
     justify-content: center;
     color: var(--main-color);
-    font-size: 1.5rem;
+    font-size: larger;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    width: 20rem;
+    cursor: pointer;
+    height: 3.12rem;
+    margin-left: 25rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: larger;
+    font-weight: 700;
     border: none;
     background-color: white;
     border-radius: 10px;

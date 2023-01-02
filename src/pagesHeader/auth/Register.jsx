@@ -161,7 +161,7 @@ export default function Register() {
                     onChange={passwordChangeHandler} />
                 <p className='danger'>{passwordError}</p>
 
-                <button className='btn-create' type='submit' >
+                <button className='btn-register' type='submit' >
                     Cont nou
                 </button>
                 <p class='register-here'>Ai cont? Te poți loga <Link to='/login'><strong>aici!</strong></Link></p>

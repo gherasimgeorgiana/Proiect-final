@@ -2,7 +2,7 @@ import '../App.css';
 
 export default function House() {
     return (
-        <section>
+        <section className='house-container'>
             <div>
                 <button className="btn-house" type='button' onClick={(e) => {
                     e.preventDefault();
