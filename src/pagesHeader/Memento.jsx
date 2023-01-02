@@ -1,5 +1,6 @@
 import React from "react";
 import './Memento.css';
+import BackToTopButton from "../backToTopButton/BackToTopButton";
 
 export function Memento() {
 
@@ -34,7 +35,7 @@ export function Memento() {
 
         <button>Adaugă</button>
       </form>
-
+      <BackToTopButton />
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css';
+import BackToTopButton from "../backToTopButton/BackToTopButton";
 
 
 export default function Rca() {
@@ -66,8 +67,9 @@ export default function Rca() {
                     • nu există vătămări corporale sau decese;<br />
                     • ambele vehicule implicate în accident au asigurare RCA valabilă la data evenimentului.
                 </p>
+                
             </div>
-
+            <BackToTopButton />
         </section>
     )
 }

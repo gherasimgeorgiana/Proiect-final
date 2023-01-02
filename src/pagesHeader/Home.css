@@ -1,13 +1,13 @@
 .home {
     display: grid;
-    width: 75%;
+    width: 90%;
     margin-left: 20%;
     font-size: larger;
 }
 
 .home h3 {
     display: flex;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .img-home {

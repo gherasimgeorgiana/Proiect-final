@@ -78,9 +78,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .auth-form-container {
-  padding-top: 1.6%;
   background-image: linear-gradient(79deg, #fcfced, #fcedfc, 48%, #ebf6ff);
   padding: 0;
+  margin-top: 30px;
 }
 
 .auth-form-container h2{
@@ -123,19 +123,21 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
 }
 
 .info-dauna {
+margin-top: 30px;
 display: grid;
-flex-direction: column;
 padding: 1rem 20rem;
 background-image: linear-gradient(79deg, #fcfced, #fcedfc, 48%, #ebf6ff);
 text-align: justify;
 }
 
 .contact {
-display: grid;
+display: flex;
+margin-top: 30px;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 background-image: linear-gradient(79deg, #fcfced, #fcedfc, 48%, #ebf6ff);
+margin-bottom: 3rem;
 }
 
 .contact-items {
@@ -226,6 +228,27 @@ font-size: larger;
 
 .all-details {
 display: grid;
+margin-bottom: 16.2rem;
+text-align: center;
+width: fit-content;
+padding-top: 20px;
+margin-left: 50px;
+}
+
+.details-title {
+margin-top: 10px;
+color: var(--main-color);
+}
+
+.button-details{
+  margin-top: 10px;
+  border: none;
+  height: 3.12rem;
+  width: 12.5rem;
+  background-color: rgb(250, 235, 215);
+  color: var(--orange);
+  font-weight: 900;
+  font-size: large;
 }
 
 .home-container{

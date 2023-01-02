@@ -1,3 +1,6 @@
+import React from "react";
+import BackToTopButton from "../backToTopButton/BackToTopButton"
+
 export default function Casco() {
     return (
         <section className="casco-container"><br />
@@ -33,8 +36,9 @@ export default function Casco() {
                     Franșiza CASCO este înscrisă în contractul de asigurare și poate fi exprimată fie sub formă de procent din despăgubire, fie ca sumă fixă sau limită inferioară pentru asigurătorul e scutit de plata sumei asigurate. De exemplu, dacă polița de asigurare prevede o franșiză de 100 de euro, iar daunele sunt evaluate la 500 de euro, asigurătorul va achita doar 400 de euro, asiguratul urmând să suporte restul de 100 de euro.<br /><br />
 
                     Acesta e un alt motiv pentru care, înainte de încheierea unui contract de asigurare, fie el pentru o poliță auto sau una de orice altă natură, trebuie să citești cu atenție toate prevederile contractuale, dar și să te asiguri că ai înțeles toate detaliile.</p>
-
+                 
             </div>
+            <BackToTopButton />
         </section>
 
     )

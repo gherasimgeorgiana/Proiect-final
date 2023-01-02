@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { InsuranceComponent } from './InsuranceComponent';
 import './InsuranceList.css';
+import BackToTopButton from '../backToTopButton/BackToTopButton';
 
 export function InsuranceList() {
   const url = 'http://localhost:3001/insurance';
@@ -31,6 +32,7 @@ export function InsuranceList() {
         })}
 
       </ul>
+      <BackToTopButton />
     </section>
   );
 }

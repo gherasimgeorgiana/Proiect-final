@@ -53,7 +53,7 @@ export function MementoList() {
       <nav className='memento-nav'>
         <p>Bună, {auth?.user?.name + '!'}</p>
 
-        <button onClick={logOut}>Logout</button>
+        <button onClick={logOut}>LogOut</button>
       </nav>
       
         <Link to="/create">

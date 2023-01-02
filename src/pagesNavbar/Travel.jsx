@@ -1,3 +1,6 @@
+import React from "react";
+import BackToTopButton from "../backToTopButton/BackToTopButton";
+
 export default function Travel() {
     return (
 
@@ -39,6 +42,7 @@ export default function Travel() {
         • facturi emise pe numele tau;<br/>
         • chitanțe privind cheltuielile medicale (inclusiv pentru produse farmaceutice unde se păstrează chitanța) sau de repatriere;<br/>
         • orice alte documente relevante pentru soluționarea cererii.</p>
+        <BackToTopButton />
         </section>
     )
 }

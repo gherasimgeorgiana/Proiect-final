@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import BackToTopButton from "../backToTopButton/BackToTopButton";
 
 export default function Info() {
     return (
@@ -35,6 +36,7 @@ export default function Info() {
             <ul>
                 <li>În caz de furt se vor alerta autoritățile în termen de maxim 24 h de la momentul constatării evenimentului, și în maxim 48 h societatea de asigurare, emitentă a contractului de asigurare.</li>
             </ul>
+            <BackToTopButton />
         </section>
     )
 }

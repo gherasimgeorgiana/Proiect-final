@@ -1,4 +1,5 @@
 import '../App.css';
+import BackToTopButton from '../backToTopButton/BackToTopButton';
 
 export default function House() {
     return (
@@ -65,6 +66,7 @@ export default function House() {
                 </p>
 
             </div>
+            <BackToTopButton />
         </section>
     )
 }

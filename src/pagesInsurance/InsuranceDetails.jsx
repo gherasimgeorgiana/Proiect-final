@@ -20,7 +20,7 @@ export function InsuranceDetails() {
         <section className="all-details">
             <img src={insuranceDetails.Poster} alt="Asigurare" height={200} />
             <h2 className="details-title">{insuranceDetails.Title}</h2>
-            <span className="details-details">{insuranceDetails.Details}</span>
+            <button className="button-details">{insuranceDetails.Details}</button>
         </section>
     )
 }
