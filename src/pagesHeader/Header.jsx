@@ -19,9 +19,9 @@ export default function Header() {
             </Link>
             <ul>
                 <CustomLink to="/mementos">Memento</CustomLink>
-                <CustomLink to="/infoDaune">Informații Daune</CustomLink>
+                <CustomLink to="/infoDaune">Info Daune</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
-                <CustomLink to="/login">Login</CustomLink> 
+                <CustomLink to="/login">LogIn</CustomLink> 
             </ul>
           
         </header>

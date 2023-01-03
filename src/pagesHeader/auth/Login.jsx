@@ -137,7 +137,7 @@ export function Login() {
                 <button className='btn-login' type='submit' >
                     Autentificare
                 </button>
-                <p class='register-here'>Nu ai cont? Te poți înregistra <Link to='/register'> <strong>aici!</strong></Link> </p>
+                <p className='register-here'>Nu ai cont? Te poți înregistra <Link to='/register'> <strong>aici!</strong></Link> </p>
             </form>
 
 

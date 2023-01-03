@@ -15,12 +15,12 @@ export default function Home() {
         <p>Dacă iți creezi cont poți chiar înregistra aceste date și noi te anunțăm cand iți expiră.</p>
         <br />
         
-            <h3>Te anuntam cand expira!</h3>
-            <p>Esti mereu la curent cu documentele care expira. Poti inregistra cand expira polita RCA, CASCO, ITP, PAD chiar si buletinul.</p><br />            
-            <h3>Economisesti timp</h3>
-            <p>Reinnoiesti polita RCA direct de pe site si asa economisesti timp, deoarece ai deja datele salvate in cont.</p><br />
+            <h3>Te anunțăm când expiră!</h3>
+            <p>Ești mereu la curent cu documentele care expiră. Poți înregistra când expiră polița RCA, CASCO, ITP, PAD chiar și buletinul.</p><br />            
+            <h3>Economisești timp</h3>
+            <p>Reînnoiești polița RCA direct de pe site și asa economisești timp, deoarece ai deja datele salvate în cont.</p><br />
             <h3>Reduci costurile</h3>
-            <p>Stii mereu cand sa iti reinnoiesti polita si asa eviti o amenda.</p>
+            <p>Știi mereu când să iți reînnoiești polița și asa eviți o amendă.</p>
         </div>
     </section>
     )

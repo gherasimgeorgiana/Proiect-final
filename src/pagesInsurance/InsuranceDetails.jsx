@@ -19,8 +19,15 @@ export function InsuranceDetails() {
     return (
         <section className="all-details">
             <img src={insuranceDetails.Poster} alt="Asigurare" height={200} />
-            <h2 className="details-title">{insuranceDetails.Title}</h2>
-            <button className="button-details">{insuranceDetails.Details}</button>
+            <h2 className="details-title">{insuranceDetails.Title}</h2>          
+            <button 
+            className="button-details"
+            type="button"
+            onClick={(e) =>{
+                e.preventDefault();
+                window.open('https://gherasim-georgiana.smartsales.ro/', '_blank');
+            }}
+            >{insuranceDetails.Details}</button>
         </section>
     )
 }

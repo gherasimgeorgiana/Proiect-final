@@ -58,7 +58,7 @@
 .table-list {
     min-width: 500px;
     width: 75%;
-    margin: 1.25rem auto;
+    margin: 1% 10% ;
     color: var(--main-color);
     font-size: larger;
     border: 2px solid var(--main-color);
@@ -106,3 +106,4 @@ th {
     height: 3.15rem;
     padding: 0.6rem 0;
 }
+

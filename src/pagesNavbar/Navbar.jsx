@@ -12,7 +12,7 @@ export default function Navbar() {
            
             <ul className={isMobile ? 'nav-item-mobile' : 'nav-item'}
             onClick={() => setIsMobile(false)}>
-              <Link to="/rca"><li className='item'>Asigurare RCA</li></Link> 
+                <Link to="/rca"><li className='item' >Asigurare RCA</li></Link> 
                 <Link to="/casco"><li className='item'>Asigurare CASCO</li></Link>
                 <Link to="/house"><li className='item'>Asigurare Locuință</li></Link>
                 <Link to="/travel"><li className='item'>Asigurare Călătorie</li></Link>

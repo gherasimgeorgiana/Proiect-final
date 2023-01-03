@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           <li><h4><strong>COMPANIE</strong></h4></li>
           <br />
           <li>Despre Noi</li>
-          <li>Contact</li>
+          <Link to="/contact">Contact</Link>
           <li>Q&A</li>
         </ul>
       </div>
@@ -20,10 +21,10 @@ export default function Footer() {
         <ul>
           <li><h4><strong>SERVICII</strong></h4></li>
           <br />
-          <li>Asigurări RCA</li>
-          <li>Asigurări CASCO</li>
-          <li>Asigurări Locuințe</li>
-          <li>Asigurări Călătorie</li>
+          <Link to="/rca">Asigurări RCA</Link>
+          <Link to="casco">Asigurări CASCO</Link>
+          <Link to='house'>Asigurări Locuințe</Link>
+          <Link to="travel">Asigurări Călătorie</Link>
         </ul>
       </div>
 

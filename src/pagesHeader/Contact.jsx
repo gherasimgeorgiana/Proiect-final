@@ -28,8 +28,9 @@ export default function Contact() {
                     <li>Mun.Bacau, jud.Bacau</li>
                 </ul>
                 <br />
+                <a href="https://www.facebook.com/georgiana.gherasim.sorina" target="_blank" rel="noreferrer noopener">
                 <RiFacebookCircleLine size='3em' color='cornflowerblue' />
-
+                </a>
             </div>
         </section>
     )

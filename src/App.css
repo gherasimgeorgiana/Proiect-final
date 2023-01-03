@@ -22,6 +22,11 @@ html, body {
  height: 100%;
  font-size: 16px;
 }
+
+body {
+  height: 100vh;
+  padding: 0;
+}
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -165,15 +170,15 @@ text-decoration: underline;
 .rca-info {
   display: grid;
   width: 80%;
-margin-left: 12.5rem;
+margin-left: 9rem;
 font-size: larger;
 }
 
 
 .casco-info {
   display: grid;
-  width: 80%;
-  margin-left: 12.5rem;
+  width: 90%;
+  margin-left: 9rem;
   font-size: larger;
 }
 
@@ -213,14 +218,14 @@ font-size: larger;
 .house-info {
   display: grid;
   width: 80%;
-  margin-left: 12.5rem;
+  margin-left: 9rem;
   font-size: larger;
 }
 
 .travel-info {
   display: grid;
   width: 80%;
-  margin-left: 12.5rem;
+  margin-left: 9rem;
   font-size: larger;
   margin-bottom: 3rem;
   text-align: justify;
@@ -251,10 +256,6 @@ color: var(--main-color);
   font-size: large;
 }
 
-.home-container{
-  margin-bottom: 3rem;
-}
-
 .insurance-complete{
   margin-bottom: 3rem;
 }
@@ -263,15 +264,27 @@ color: var(--main-color);
 @media screen and (max-width: 480px) {
    .info-dauna {
   padding: 1rem;
+  width: 100%;
    } 
+
+   .contact {
+    width: 100%;
+   }
 
    .rca-info {
     margin-left: 1.5rem;
    width: 90%;
    }
+   .rca-container{
+    width: 100%;
+   }
 
    .btn-rca {
     margin-left: 25%;
+   }
+
+   .casco-container{
+    width: 100%;
    }
 
    .casco-info {
@@ -279,9 +292,13 @@ color: var(--main-color);
     width: 90%;
    }
 
+   .house-container{
+    width: 100%;
+   }
+
    .house-info {
     margin-left: 1.5rem;
-    width: 90%;
+ 
    }
 
    .btn-house{
@@ -299,9 +316,13 @@ color: var(--main-color);
     margin: 0;
    }
 
+   .insurance-complete{
+    width: 100%;
+   }
+
    ul.insurance-list{
     margin: 15px;
-    width: 450px;
+    width: 400px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap:5rem;
     
@@ -314,11 +335,15 @@ color: var(--main-color);
 
   }
 
-@media (min-width: 480px) and (max-width: 780px) {
+@media (min-width: 481px) and (max-width: 780px) {
   .info-dauna {
     padding: 1rem;
      } 
   
+     .rca-container{
+      width: 100%;
+     }
+     
      .rca-info {
       margin-left: 2rem;
      width: 90%;
@@ -357,8 +382,8 @@ color: var(--main-color);
   
      ul.insurance-list{
       margin: 0 25px 20px 25px;
-      grid-template-columns: repeat(3, 1fr);
-      gap:2rem;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap:5rem;
       
      }
   
@@ -367,3 +392,12 @@ color: var(--main-color);
       margin-left: 40px;
      }
     }
+
+@media (min-width: 781px){
+ 
+
+  .casco-info{
+    width: 80%;
+  }
+
+} 
