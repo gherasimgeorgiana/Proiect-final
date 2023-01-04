@@ -8,9 +8,11 @@ export default function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [nameError, setNameError] = useState('');
+    const [lastNameError, setLastNameError] = useState('');
 
     const { auth, setAuth } = useContext(AuthContext);
 
@@ -18,6 +20,10 @@ export default function Register() {
 
     function nameChangeHandler(event) {
         setName(event.target.value);
+    }
+
+    function lastNameChangeHandler(event) {
+        setLastName(event.target.value);
     }
 
     function emailChangeHandler(event) {
@@ -32,17 +38,20 @@ export default function Register() {
         setEmailError('');
         setPasswordError('');
         setNameError('');
+        setLastNameError('');
 
         const emailValid = validateEmail(email);
         const passwordValid = validatePassword(password);
         const nameValid = validateName(name);
+        const lastNameValid = validateLastName(lastName);
 
-        if (!emailValid || !passwordValid || nameValid) {
+        if (!emailValid || !passwordValid || !nameValid || !lastNameValid){
             return;
         }
 
         const body = {
             name: name,
+            lastName: lastName,
             email: email,
             password: password
         }
@@ -60,13 +69,24 @@ export default function Register() {
             })
     }
 
+    function validateLastName(lastName) {
+        const cap = /^[A-Z]{1}.+$/;
+
+        const lastNameValid = cap.test(lastName);
+
+        if (!lastNameValid) {
+            setNameError('Introduceți prenumele dvs!')
+        }
+        return lastNameValid;
+    }
+
     function validateName(name) {
         const cap = /^[A-Z]{1}.+$/;
 
         const nameValid = cap.test(name);
 
         if (!nameValid) {
-            setNameError('Introduceti numele dvs!')
+            setNameError('Introduceți numele dvs!')
         }
         return nameValid;
     }
@@ -135,9 +155,17 @@ export default function Register() {
                 <input
                     value={name}
                     id='name'
-                    placeholder=' Numele si prenumele'
+                    placeholder=' Numele'
                     onChange={nameChangeHandler} />
                 <p className='danger'>{nameError}</p>
+
+                <label></label>
+                <input
+                    value={lastName}
+                    id='lastName'
+                    placeholder=' Prenumele'
+                    onChange={lastNameChangeHandler} />
+                <p className='danger'>{lastNameError}</p>
 
                 <label htmlFor='email'></label>
                 <input
@@ -164,7 +192,7 @@ export default function Register() {
                 <button className='btn-register' type='submit' >
                     Cont nou
                 </button>
-                <p class='register-here'>Ai cont? Te poți loga <Link to='/login'><strong>aici!</strong></Link></p>
+                <p className='register-here'>Ai cont? Te poți loga <Link to='/login'><strong>aici!</strong></Link></p>
             </form>
 
         </section>

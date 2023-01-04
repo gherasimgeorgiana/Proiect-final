@@ -51,7 +51,7 @@ export function MementoList() {
   return (
     <section className='memento-list'>
       <nav className='memento-nav'>
-        <p>Bună, {auth?.user?.name + '!'}</p>
+        <p>Bună, {auth?.user?.name + " " + auth?.user.lastName + '!'}</p>
 
         <button onClick={logOut}>LogOut</button>
       </nav>

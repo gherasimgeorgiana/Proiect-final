@@ -50,7 +50,6 @@ function App() {
             </CanNavigate>
           } />
           <Route path="/create/" element={<MementoCreate />} />
-          <Route path="/delete/" element={<MementoCreate />} />
           <Route path="/edit/:id" element={<MementoEdit />} />
 
           <Route path="/infoDaune" element={<Info />} />

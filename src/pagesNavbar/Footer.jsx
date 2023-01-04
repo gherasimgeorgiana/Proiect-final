@@ -19,13 +19,50 @@ export default function Footer() {
       <div className='footer-info'>
 
         <ul>
-          <li><h4><strong>SERVICII</strong></h4></li>
+          <li><h4><strong>UTILE</strong></h4></li>
           <br />
-          <Link to="/rca">Asigurări RCA</Link>
-          <Link to="casco">Asigurări CASCO</Link>
-          <Link to='house'>Asigurări Locuințe</Link>
-          <Link to="travel">Asigurări Călătorie</Link>
+          
+          <Link>
+          <button
+          className='btn-utile'
+          onClick={(e) =>{e.preventDefault();
+          window.open("https://www.asfromania.ro/", "_blank");
+          }}>
+          ASF
+          </button>
+          </Link>
+
+          <Link>
+          <button
+          className='btn-utile'
+          onClick={(e) =>{e.preventDefault();
+          window.open("https://www.aida.info.ro/", "_blank");
+          }}>
+          AIDA
+          </button>
+          </Link>
+
+          <Link>
+          <button
+          className='btn-utile'
+          onClick={(e) =>{e.preventDefault();
+          window.open("https://www.baar.ro/", "_blank");
+          }}>
+          BAAR
+          </button>
+          </Link>
+
+          <Link>
+          <button
+          className='btn-utile'
+          onClick={(e) =>{e.preventDefault();
+          window.open("https://www.paidromania.ro/", "_blank");
+          }}>
+          PAID
+          </button>
+          </Link>
         </ul>
+        
       </div>
 
       <div className='footer-info'>

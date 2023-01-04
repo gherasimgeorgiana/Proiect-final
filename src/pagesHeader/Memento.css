@@ -84,7 +84,7 @@ input {
    }
 
    td{
-    font-size: 14.5px;
+    font-size: 14px;
    }
 
    th, td {
@@ -144,6 +144,12 @@ input {
        }
 
        .btn-edit-delete{
-        width: auto;
+        display: flex;
+        flex-direction: column;
+        height: 4rem;
+        width: 100%;
        }
+
  }
+
+ 

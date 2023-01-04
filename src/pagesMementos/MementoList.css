@@ -55,10 +55,9 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.table-list {
-    min-width: 500px;
+.table-list { 
     width: 75%;
-    margin: 1% 10% ;
+    margin: 1% 5% ;
     color: var(--main-color);
     font-size: larger;
     border: 2px solid var(--main-color);
@@ -72,7 +71,7 @@ thead tr {
 
 th,
 td {
-    padding: 0.60rem 0.95rem;
+    padding: 5px 10px;
 }
 
 tbody tr,
@@ -82,28 +81,25 @@ th {
 }
 
 .btn-edit-delete button {
-    border: none;
-    display: flex;
-    float: left;
+   border-color: white;
     width: 5.5rem;
-    justify-content: center;
     background-color: var(--main-color);
     color: white;
-    padding: 0;
 }
 
 .btn-delete-list {
-    margin-left: 0.625rem;
+    padding: 0;
 }
 
 .btn-edit-list {
-    margin-left: 0.625rem;
+    padding: 0;
 }
 
 .btn-edit-delete {
-    justify-content: space-around;
-    display: flex;
-    height: 3.15rem;
-    padding: 0.6rem 0;
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+align-items: center;
 }
 

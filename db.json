@@ -58,20 +58,6 @@
   "mementos": [
     {
       "document": "Pasaport",
-      "data": "2023-11-05",
-      "phone": "0740000446",
-      "email": "test15@yahoo.com",
-      "id": 15
-    },
-    {
-      "document": "ITP",
-      "data": "2023-10-15",
-      "phone": "0740000016",
-      "email": "test16@yahoo.com",
-      "id": 16
-    },
-    {
-      "document": "Pasaport",
       "data": "2023-08-05",
       "phone": "0740000012",
       "email": "test12@yahoo.com",
@@ -118,13 +104,6 @@
       "phone": "072222222",
       "email": "test123@yahoo.com",
       "id": 44
-    },
-    {
-      "document": "Permis",
-      "data": "2023-01-27",
-      "phone": "078888",
-      "email": "test@gmail.com",
-      "id": 45
     }
   ],
   "users": [
@@ -132,31 +111,57 @@
       "email": "test@gmail.com",
       "password": "$2a$10$INgQR39h/7tTeajQV/SHUevx11usJp15l/XTFVtXi0KTt0U9/KeeC",
       "name": "Test test",
+      "lastName": "test2",
       "id": 1
     },
     {
       "email": "test@yahoo.com",
       "password": "$2a$10$nEOPNzBCyXkqL0bsz1IbAu4GkleGuoxtLqxoPmYUssd7mNDAtrRku",
       "name": "Adrian Popescu",
+      "lastName": "test3",
       "id": 2
     },
     {
       "email": "test123@yahoo.com",
       "password": "$2a$10$9eiuSZNSRJUpZW9M3lIMGuZCVbfLR0J/rvYZ.6DjoTLOfbuUiiTJK",
       "name": "Adrian Popescu",
+      "lastName": "test4",
       "id": 3
     },
     {
       "email": "geo@yahoo.com",
       "password": "$2a$10$91PVzp6iegMaZwQVY7o0i.YNtKGYBn0q.AbPtn2gIsWpveIwH8GNa",
       "name": "geo geo",
+      "lastName": "geo",
       "id": 4
     },
     {
       "email": "micugeorgianas@yahoo.com",
       "password": "$2a$10$glicdxa/XUsjAYbJXbCLfOcovRZQ9KqmgthWBgII1Pz8c4f8cC88u",
       "name": "geo geo",
+      "lastName": "geo2",
       "id": 5
+    },
+    {
+      "email": "ion@yahoo.com",
+      "password": "$2a$10$NmVQj6qXCq40J5PhYeu35O.FSK3tJGeDVMp41TX/pcME4t/bHGSuG",
+      "name": "Popescu",
+      "lastName": "Ion",
+      "id": 6
+    },
+    {
+      "email": "georgiana@yahoo.com",
+      "password": "$2a$10$2Zi9Rs/QqbRwh7CJLeiJQ.KrhKfWBBnove/N7pFHkOdwX9soDzd.G",
+      "name": "Gherasim",
+      "lastName": "Georgiana",
+      "id": 7
+    },
+    {
+      "email": "popescu@yahoo.com",
+      "password": "$2a$10$ssKC4Un2NQsVelnyd7yt9Os3WqGTLw6H75U/s8ZlBZwN2zZJz3Fg6",
+      "name": "Popescu",
+      "lastName": "Ionescu",
+      "id": 8
     }
   ]
 }
