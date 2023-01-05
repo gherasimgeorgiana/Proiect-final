@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './InsuranceComponent.css'
 
 export function InsuranceComponent(props) {
-  const { Title, Details, Poster, id } = props;
+  const { Title, Poster, id } = props;
 
   return (
     <Link to={`/complet/insurance-details/${id}`}>
@@ -12,7 +12,7 @@ export function InsuranceComponent(props) {
           <img src={Poster} alt="Asigurare" height={200} />
 
           <h3 className='insurance-item__title'>{Title}</h3>
-          <button className='insurance-btn'>{Details}</button>
+          {/* <button className='insurance-btn'>{Details}</button> */}
         </article>
       </li>
     </Link>

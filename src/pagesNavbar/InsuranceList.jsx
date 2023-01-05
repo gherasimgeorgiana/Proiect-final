@@ -30,7 +30,7 @@ export function InsuranceList() {
             ></InsuranceComponent>
           );
         })}
-
+ 
       </ul>
       <BackToTopButton />
     </section>

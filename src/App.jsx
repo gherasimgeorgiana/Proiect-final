@@ -4,7 +4,7 @@ import './App.css';
 import Home from './pagesHeader/Home';
 import Info from './pagesHeader/Info';
 import Contact from './pagesHeader/Contact';
-import { Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import Navbar from './pagesNavbar/Navbar';
 import Rca from './pagesNavbar/Rca';
 import House from './pagesNavbar/House';
@@ -21,6 +21,8 @@ import { CanNavigate } from './pagesHeader/auth/CanNavigate';
 import { useState } from 'react';
 import Footer from './pagesNavbar/Footer';
 import Register from './pagesHeader/auth/Register';
+import RegisterEdit from './pagesHeader/auth/RegisterEdit';
+
 
 
 
@@ -33,8 +35,9 @@ function App() {
 
   return (
 
-    <>
+    <BrowserRouter>
       <AuthContextProvider>
+        <div>
         <Header />
         <Navbar />
         
@@ -42,6 +45,7 @@ function App() {
        
           <Route exact path="login" element={ currentForm === 'login' ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />} />
           <Route path="/register" element={ <Register />} />
+          <Route path="/registeredit/:id" element={<RegisterEdit />} />
         
           <Route path="/" element={<Home />} />
           <Route path="/mementos/" element={
@@ -64,8 +68,9 @@ function App() {
           
         </Routes>
         <Footer />
+        </div>
       </AuthContextProvider>
-    </>
+    </BrowserRouter>
 
   );
 }

@@ -1,40 +1,43 @@
-import React, { useContext, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react'
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from './Auth-context';
 
+export default function RegisterEdit() {
+    const url = 'http://localhost:3001/users/';
+    let { id } = useParams();
 
-export default function Register() {
-    const loginUrl = 'http://localhost:3001/register';
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
-    const [lastName, setLastName] = useState('');
-    
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [nameError, setNameError] = useState('');
     const [lastNameError, setLastNameError] = useState('');
 
-    const { auth, setAuth } = useContext(AuthContext);
-
+    const [name, setName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    function nameChangeHandler(event) {
-        setName(event.target.value);
-    }
+    const { auth } = useContext(AuthContext);
 
-    function lastNameChangeHandler(event) {
-        setLastName(event.target.value);
-    }
+    useEffect(() => {
+        fetch(url + id, {
+            headers: {
+                Authorization: `Bearer ${auth.accessToken}`
+            }
+        })
+            .then((response) => response.json())
+            .then((resp) => {
+                setName(resp.name);
+                setLastName(resp.lastName);
+                setEmail(resp.email);
+                setPassword(resp.password);
+            }).catch((err) => {
+                console.log(err.message);
+            })
+    }, [id]);
 
-    function emailChangeHandler(event) {
-        setEmail(event.target.value);
-    }
-    function passwordChangeHandler(event) {
-        setPassword(event.target.value);
-    }
 
-    function onSubmit(event) {
+    const handleSubmit = (event) => {
         event.preventDefault();
         setEmailError('');
         setPasswordError('');
@@ -54,35 +57,38 @@ export default function Register() {
             name: name,
             lastName: lastName,
             email: email,
-            password: password
-        }
-        fetch(loginUrl, {
-            method: 'POST',
+            password: password,
+            id: id,
+        };
+
+        fetch(url + id, {
+            method: "PUT",
             headers: {
                 'Content-Type': 'application/json',
+                Authorization: `Bearer ${auth.accessToken}`
             },
             body: JSON.stringify(body)
+        }).then(() => {
+            alert('Editat cu success!')
+            navigate('/mementos/')
+        }).catch((err) => {
+            console.log(err.message)
         })
-            .then((response) => response.json())
-            .then((response) => {
-                setAuth(response);
-                navigate('/mementos');
-            })
     }
 
     function validateLastName(lastName) {
-        const cap = /^[a-z]{1}.+$/;
+        const cap = /^[A-Z]{1}.+$/;
 
         const lastNameValid = cap.test(lastName);
 
         if (!lastNameValid) {
-            setLastNameError('Introduceți prenumele dvs!')
+            setNameError('Introduceți prenumele dvs!')
         }
         return lastNameValid;
     }
 
     function validateName(name) {
-        const cap = /^[a-z]{1}.+$/;
+        const cap = /^[A-Z]{1}.+$/;
 
         const nameValid = cap.test(name);
 
@@ -146,56 +152,57 @@ export default function Register() {
         return false;
     }
 
-    return (
 
-        <section className='auth-form-container'>
+  return (
+    <section className='auth-form-container'>
 
-            <form className='register-form' onSubmit={onSubmit} noValidate>
-                <h2>Înregistează-te</h2>
-                <label></label>
-                <input
-                    value={name}
-                    id='name'
-                    placeholder=' Numele'
-                    onChange={nameChangeHandler} />
-                <p className='danger'>{nameError}</p>
+    <form className='register-form' onSubmit={handleSubmit} noValidate>
+        <h2>Editeaza profil</h2>
+        <label></label>
+        <input
+            value={name}
+            id='name'
+            placeholder=' Numele'
+            onChange={event => setName(event.target.value)} />
+        <p className='danger'>{nameError}</p>
 
-                <label></label>
-                <input
-                    value={lastName}
-                    id='lastName'
-                    placeholder=' Prenumele'
-                    onChange={lastNameChangeHandler} />
-                <p className='danger'>{lastNameError}</p>
+        <label></label>
+        <input
+            value={lastName}
+            id='lastName'
+            placeholder=' Prenumele'
+            onChange={event => setLastName(event.target.value)} />
+        <p className='danger'>{lastNameError}</p>
 
-                <label htmlFor='email'></label>
-                <input
-                    id='email'
-                    type='email'
-                    required="required"
-                    placeholder=" Adresa de email"
-                    value={email}
-                    onChange={emailChangeHandler} />
-                <p className='danger'>{emailError}</p>
+        <label htmlFor='email'></label>
+        <input
+            id='email'
+            type='email'
+            required="required"
+            placeholder=" Adresa de email"
+            value={email}
+            onChange={event => setEmail(event.target.value)} />
+        <p className='danger'>{emailError}</p>
 
 
 
-                <label htmlFor='password'></label>
-                <input
-                    id='password'
-                    type='password'
-                    required="required"
-                    placeholder=" Parola"
-                    value={password}
-                    onChange={passwordChangeHandler} />
-                <p className='danger'>{passwordError}</p>
+        <label htmlFor='password'></label>
+        <input
+            id='password'
+            type='password'
+            required="required"
+            placeholder=" Parola"
+            value={password}
+            onChange={event => setPassword(event.target.value)} />
+        <p className='danger'>{passwordError}</p>
 
-                <button className='btn-register' type='submit' >
-                    Cont nou
-                </button>
-                <p className='register-here'>Ai cont? Te poți loga <Link to='/login'><strong>aici!</strong></Link></p>
-            </form>
+        <button className='btn-register' onClick={handleSubmit} >
+            Editeaza cont
+        </button>                
+        <Link to="/login">
+            <button>Înapoi</button></Link>
+    </form>
 
-        </section>
-    )
+</section>
+  )
 }

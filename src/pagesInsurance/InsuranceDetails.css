@@ -1,0 +1,41 @@
+.all-details {
+    display: grid;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 50px;
+justify-items: center;
+    }
+
+    .all-details img{
+        text-align: center;
+    }
+    
+    .details-title {
+    margin-top: 10px;
+    color: var(--main-color);
+    }
+    
+    .button-details{
+      margin-top: 10px;
+      border: none;
+      height: 3.12rem;
+      width: 12.5rem;
+      background-color: rgb(250, 235, 215);
+      color: var(--orange);
+      font-weight: 900;
+      font-size: large;
+    }
+
+    .insurance-details-article {
+        font-size: larger;
+        font-weight: 600;
+        color:var(--main-color);
+      
+    }
+
+    @media screen and (max-width: 480px){
+        .all-details{
+            margin:2rem
+        }
+    }

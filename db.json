@@ -3,80 +3,65 @@
     {
       "Poster": "/images/svg/rca.svg",
       "Title": "Asigurare RCA",
-      "Details": "Calculeaza Asigurare",
+      "Details": "Calculează Asigurare",
       "id": 1
     },
     {
       "Poster": "/images/svg/casco.svg",
       "Title": "Asigurare CASCO",
-      "Details": "Calculeaza Asigurare",
+      "Details": "Calculează Asigurare",
       "id": 2
     },
     {
       "Poster": "/images/svg/asistenta-rutiera.svg",
-      "Title": "Asistenta Rutiera",
-      "Details": "Calculeaza Asigurare",
+      "Title": "Asistență Rutieră",
+      "Details": "Calculează Asigurare",
       "id": 3
     },
     {
       "Poster": "/images/svg/pad.svg",
       "Title": "Asigurare PAD",
-      "Details": "Calculeaza Asigurare",
+      "Details": "Calculează Asigurare",
       "id": 4
     },
     {
       "Poster": "/images/svg/facultativa.svg",
-      "Title": "Asigurare Facultativa",
-      "Details": "Calculeaza Asigurare",
+      "Title": "Asigurare Facultativă",
+      "Details": "Calculează Asigurare",
       "id": 5
     },
     {
       "Poster": "/images/svg/travel.svg",
-      "Title": "Asigurare de Calatorie",
-      "Details": "Calculeaza Asigurare",
+      "Title": "Asigurare de Călătorie",
+      "Details": "Calculează Asigurare",
       "id": 6
     },
     {
       "Poster": "/images/svg/malpraxis.svg",
       "Title": "Asigurare Malpraxis",
-      "Details": "Calculeaza Asigurare",
+      "Details": "Calculează Asigurare",
       "id": 7
     },
     {
       "Poster": "/images/svg/sanatate.svg",
-      "Title": "Asigurare de Sanatate",
-      "Details": "Calculeaza Asigurare",
+      "Title": "Asigurare de Sănătate",
+      "Details": "Calculează Asigurare",
       "id": 8
     },
     {
       "Poster": "/images/svg/viata.svg",
-      "Title": "Asigurare de Viata",
-      "Details": "Calculeaza Asigurare",
+      "Title": "Asigurare de Viață",
+      "Details": "Calculează Asigurare",
       "id": 9
+    },
+    {
+      "Poster": "/images/svg/rasp-civile.svg", 
+      "Title": "Răspundere Civilă",
+      "Details": "Calculează Asigurare",
+      "id": 10
     }
   ],
   "mementos": [
-    {
-      "document": "Pasaport",
-      "data": "2023-08-05",
-      "phone": "0740000012",
-      "email": "test12@yahoo.com",
-      "id": 18
-    },
-    {
-      "document": "Permis",
-      "data": "2023-11-05",
-      "phone": "0740000012",
-      "email": "test12@yahoo.com",
-      "id": 19
-    },
-    {
-      "document": "ITM",
-      "data": "2023-06-05",
-      "phone": "0740000020",
-      "email": "test20@yahoo.com",
-      "id": 20
-    },
     {
       "document": "Buletin",
       "data": "2023-04-05",
@@ -104,6 +89,13 @@
       "phone": "072222222",
       "email": "test123@yahoo.com",
       "id": 44
+    },
+    {
+      "document": "Permis",
+      "data": "2023-01-28",
+      "phone": "0740000000",
+      "email": "asdf@gmail.com",
+      "id": 45
     }
   ],
   "users": [
@@ -162,6 +154,13 @@
       "name": "Popescu",
       "lastName": "Ionescu",
       "id": 8
+    },
+    {
+      "email": "asdf@gmail.com",
+      "password": "$2a$10$OBUKAyC5tBsD7o/dSEaN8.t5EfeqqmBPzdLFuoJCs8vNlcaRExCJe",
+      "name": "GD",
+      "lastName": "Ion",
+      "id": 9
     }
   ]
 }

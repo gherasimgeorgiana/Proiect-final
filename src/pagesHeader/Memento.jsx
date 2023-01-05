@@ -18,10 +18,10 @@ export function Memento() {
           <option>CASCO</option>
           <option>PAD</option>
           <option>ITP</option>
-          <option>Rovinieta</option>
+          <option>Rovinietă</option>
           <option>Permis auto</option>
           <option>Act de identitate</option>
-          <option>Pasaport</option>
+          <option>Pașaport</option>
         </select>
 
         <label htmlFor="data"></label>

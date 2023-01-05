@@ -1,9 +1,12 @@
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import Logo from '../images/logo.svg';
+import { FaRegUser } from "react-icons/fa";
 import './Header.css';
+import { useContext } from "react";
+import { AuthContext } from "./auth/Auth-context";
 
 export default function Header() {
- 
+    const { logOut } = useContext(AuthContext);
     return( 
         <header className='header-page'>
             <Link to="/" >
@@ -21,9 +24,16 @@ export default function Header() {
                 <CustomLink to="/mementos">Memento</CustomLink>
                 <CustomLink to="/infoDaune">Info Daune</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
-                <CustomLink to="/login">LogIn</CustomLink> 
+
+                <div className="dropdown">
+                    <button className="dropbtn"><FaRegUser /></button>
+                    <div className="dropdown-content">
+                    <CustomLink to='/login'><button> Log In</button></CustomLink>
+                    <CustomLink to='/'><button onClick={logOut}>LogOut</button></CustomLink> 
+                    </div>
+                </div>
             </ul>
-          
+
         </header>
     )
 }

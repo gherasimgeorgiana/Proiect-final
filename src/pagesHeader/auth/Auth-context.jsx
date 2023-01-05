@@ -19,6 +19,7 @@ export function AuthContextProvider(props) {
     navigate('/login');
   }
 
+
   return (
     <AuthContext.Provider value={{ auth, setAuth, logOut }}>
       {children}

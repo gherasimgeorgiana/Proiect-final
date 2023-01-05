@@ -73,6 +73,10 @@ p, h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(79deg, #fcfced, #fcedfc, 48%, #ebf6ff);
 }
 
+.danger{
+  color:rgb(173, 9, 9);
+}
+
 .auth-form-container, .login-form, .register-form {
   display: flex;
   flex-direction: column;
@@ -80,6 +84,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   align-items: center;
   color:var(--main-color);
+  margin-bottom: 1rem;
 }
 
 .auth-form-container {
@@ -231,31 +236,6 @@ font-size: larger;
   text-align: justify;
 }
 
-.all-details {
-display: grid;
-margin-bottom: 16.2rem;
-text-align: center;
-width: fit-content;
-padding-top: 20px;
-margin-left: 50px;
-}
-
-.details-title {
-margin-top: 10px;
-color: var(--main-color);
-}
-
-.button-details{
-  margin-top: 10px;
-  border: none;
-  height: 3.12rem;
-  width: 12.5rem;
-  background-color: rgb(250, 235, 215);
-  color: var(--orange);
-  font-weight: 900;
-  font-size: large;
-}
-
 .insurance-complete{
   margin-bottom: 3rem;
 }
@@ -269,6 +249,7 @@ color: var(--main-color);
 
    .contact {
     width: 100%;
+    margin-bottom: 4rem;
    }
 
    .rca-info {
@@ -327,9 +308,12 @@ color: var(--main-color);
     gap:5rem;
    }
 
+   .insurance-item{
+    display: flex;
+    flex-direction: column;
+   }
    .insurance-item img{
     height: 120px;
-    margin-left: 40px;
    }
 
   }

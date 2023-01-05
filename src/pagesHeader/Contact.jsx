@@ -10,7 +10,7 @@ export default function Contact() {
             <br />
             <div className="contact-items">
                 <RiCustomerService2Fill size='3em' color='cornflowerblue' />
-                <br />
+            
                 <ul >
                     <li><h4>Luni - Sambata</h4></li>
                     <li>09:00 - 20:00</li>
@@ -19,7 +19,7 @@ export default function Contact() {
                     <li>Închis</li>
                 </ul>
                 <MdAlternateEmail size='3em' color='cornflowerblue' />
-                <br />
+                
                 <ul>
                     <li><h4>Contact</h4></li>
                     <li>georgiana.gherasim@destine-broker.ro</li>

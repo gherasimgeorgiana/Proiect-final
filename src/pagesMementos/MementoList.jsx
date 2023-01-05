@@ -2,17 +2,16 @@ import React from 'react';
 import "./MementoList.css";
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../pagesHeader/auth/Auth-context';
 
 export function MementoList() {
-
   const url = 'http://localhost:3001/mementos/';
   const [mementos, setMementos] = useState(null);
   const navigate = useNavigate();
 
-  const { auth, logOut } = useContext(AuthContext);
+  const { auth } = useContext(AuthContext);
 
   const editMemento = (id) => {
     navigate('/edit/' + id);
@@ -52,8 +51,7 @@ export function MementoList() {
     <section className='memento-list'>
       <nav className='memento-nav'>
         <p>Bună, {auth?.user?.name + " " + auth?.user.lastName + '!'}</p>
-
-        <button onClick={logOut}>LogOut</button>
+        
       </nav>
       
         <Link to="/create">
@@ -90,4 +88,4 @@ export function MementoList() {
 
     </section>
   )
-}
+} 
